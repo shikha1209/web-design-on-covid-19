@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <style>
+        *{
+ margin: 0;
+ padding: 0;
+ font-family: Century Gothic;
+ }
+ 
+ body{
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1.jpg");
+ height:100vh;
+ background-size: cover;
+ background-position: center;
+ }
+ ul{
+ float: right;
+ list-style-type: none;
+ margin-top: 25px;
+ }
+ ul li{
+ display: inline-block;
+ }
+ ul li a{
+ text-decoration: none;
+ padding: 5px 20px;
+ border: 1px solid transparent;
+ transition: 0.6s ease;
+ }
+ ul li a:hover{
+ background-color: #0000ff;
+ color: #fff;
+ }
+ ul li.active a{
+ background-color: #0000ff;
+ color: #fff;
+ }
+ 
+ .logo img{
+ float: left;
+ width: 90px;
+ height:100px;
+ }
+ 
+ .main{
+ max-width: 1200px;
+ margin: auto;
+ }
+
+.border{
+display: block;
+margin: auto;
+width: 160px;
+height: 3px;
+background: #3498db;
+margin-bottom: 20px;
+}
+.sec{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.sec h5{
+color: #fff;
+font-size: 45px;
+}
+.sec{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;  
+}
+
+.name{
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+
+}
+     </style>
+</head>
+<body>
+    
+      <header>
+        <div class="main">
+           <div class="logo">
+              <img src="2.jpeg">
+           </div>
+             <ul>
+                <li class="active"><a href="main.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+
+           <div class="sec" >
+       <h1> <span class="name">about our website</span></h1> 
+        <span class="border"></span>
+        <p>This is the dummy text </p>
+    </div>
+</body>
+</html>
