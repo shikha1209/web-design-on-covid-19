@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BANK</title>
+</head>
+<style>
+    *{
+margin: 2px;
+padding: 2px;
+font-family: Century Gothic;
+text-align: center;
+}
+
+body{
+
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1.jpg");
+
+background-size: cover;
+background-position: center;
+}
+
+ul{
+float: right;
+list-style-type: none;
+margin-top: 15px;
+}
+ul li{
+display: inline-block;
+}
+
+ul li a{
+text-decoration: none;
+padding: 5px 10px;
+border: 1px solid transparent;
+transition: 0.6s ease;
+}
+ul li a:hover{
+background-color: #0000ff;
+color: #fff;
+}
+
+ul li.active a{
+background-color: #0000ff;
+color: #fff;
+}
+
+.logo img{
+float: left;
+width: 90px;
+height:100px;
+}
+
+.main{
+max-width: 1200px;
+margin: auto;
+}
+
+.title{
+margin-top: 100px;
+color: #fff;
+}
+
+.title h1{
+font-size: 32px;
+line-height: 10px;
+}
+
+.title h2{
+font-size: 16px;
+}
+
+form{
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;
+margin-bottom: 50px;
+}
+
+.form-control{
+width: 600px;
+background: transparent;
+border: none;
+outline: none;
+border-bottom: 1px solid gray;
+color: #fff;
+font-size: 18px;
+margin-bottom: 16px;
+}
+
+input{
+height: 45px;
+}
+
+form .submit{
+background-color: #ff5722;
+border-color: transparent;
+color: #fff;
+font-size: 20px;
+letter-spacing: 2px;
+height:50px;
+margin-top: 20px;
+transition: 0.4s ease;
+}
+
+form .submit:hover{
+background-color: #f44336;
+cursor: pointer;
+}
+
+</style>
+<body>
+ <header>
+       <div class="main">
+          <div class="logo">
+             <img src="2.jpeg">
+          </div>
+            <ul>
+               <li class="active"><a href="main.html">HOME</a></li>
+               <li><a href="#">GALLERY</a></li>
+               <li><a href="#">ABOUT</a></li>
+               <li><a href="contact.html">CONTACT US</a></li>
+           </ul>
+       </div>
+<div class="title">
+
+<h1>FILL THE FORM</h1><br>
+<form>
+<fieldset>
+<legend align="center"> FORM </legend>
+<input type="text" name="username" class="form-control" placeholder="Enter Your Name" required><br><br>
+<input type="text" name="add" class="form-control" placeholder="Enter Your Address" required><br><br>
+<input type="number" name="phone" class="form-control" placeholder="Enter Your Phone no" required><br><br>
+<input type="email" name="email" class="form-control" placeholder="Enter Your Mail" required><br><br>
+DOB: <input type="date" name="date" class="form-control"  required><br><br>
+<h2>Gender: </h2><input type="radio" name="gender" class="form-contrl">Male
+                         <input type="radio" name="gender" class="form-contrl">Female
+                        <input type="radio" name="gender" class="form-contrl">Other<br><br>
+BANK NAME: <select name="YOC" class="form-control">
+                    <option disabled selected value></option>
+                    <option value="y1">State Bank of India</option>
+                    <option value="y2">ICICI Bank</option>
+                    <option value="y3">Axis Bank</option>
+                    <option value="y4">HDFC Bank</option>
+                    <option value="y5">UCO Bank</option>
+                </select>
+                <br><br>
+Account Type: <input type="radio" name="branch" class="form-contrl">CURRENT
+                <input type="radio" name="branch" class="form-contrl">SAVING<br><br>
+<input type="submit" name="" class="form-control submit" value="SUBMIT">
+</fieldset>
+</form>
+</div>
+</header>
+</body>
+</html>
+

@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BANKING</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+font-family: Century Gothic;
+}
+
+body{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1.jpg");
+height:100vh;
+background-size: cover;
+background-position: center;
+}
+ul{
+float: right;
+list-style-type: none;
+margin-top: 25px;
+}
+ul li{
+display: inline-block;
+}
+ul li a{
+text-decoration: none;
+padding: 5px 20px;
+border: 1px solid transparent;
+transition: 0.6s ease;
+}
+ul li a:hover{
+background-color: #0000ff;
+color: #fff;
+}
+ul li.active a{
+background-color: #0000ff;
+color: #fff;
+}
+.logo img{
+float: left;
+width: 90px;
+height:100px;
+}
+
+.main{
+max-width: 1200px;
+margin: auto;
+}
+
+form{
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;
+margin-bottom: 50px;
+}
+
+.form-control{
+width: 600px;
+background: transparent;
+border: none;
+outline: none;
+border-bottom: 1px solid gray;
+color: #ffffff;
+font-size: 18px;
+margin-bottom: 16px;
+}
+
+h2{
+margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;
+}
+
+
+.form-contrl{
+width: 400px;
+background: transparent;
+border: none;
+outline: none;
+border-bottom: 1px blue;
+color: #ffffff;
+font-size: 18px;
+margin-bottom: 16px;
+}
+input{
+height: 45px;
+}
+
+form .submit{
+background-color: #ff5722;
+border-color: transparent;
+color: #fff;
+font-size: 20px;
+letter-spacing: 2px;
+height:50px;
+margin-top: 20px;
+transition: 0.4s ease;
+}
+
+form .submit:hover{
+background-color: #f44336;
+cursor: pointer;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+<br>
+<h2 >FILL UP THE FORM</h2><br><br> 
+<div class="main">
+<div class="logo">
+<img src="2.jpeg">
+</div>
+<ul>
+<li class="active"><a href="main.html">HOME</a></li>
+<li><a href="#">GALLERY</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+</ul>
+</div>
+    <fieldset>
+        <legend>Form</legend>
+        <form action="#">
+                Name: <input type="search" name="username" size="30" maxlength="50" required placeholder="enter your name"><br><br>
+                Identification Number: <input type="number" name="roll" maxlength="7" required><br><br>
+                ADDRESS: <input type="text" name="email" required id="email"><br><br>
+                Gender: <input type="radio" name="gender">Male
+                         <input type="radio" name="gender" checked>Female<br><br>
+               Phone No.: <input type="number" name="phone" required id="phone" maxlength="10"><br><br>
+                DOB: <input type="date"><br><br>
+                CHOOSE THE COMMODITY: <select name="YOC">
+                    <option disabled selected value></option>
+
+                    <input type="checkbox" option value="y1">RICE</option>
+                    <input type="checkbox" option value="y2">DAL</option>
+                    <input type="checkbox" option value="y3">FLOUR</option>
+                    <input type="checkbox" option value="y4">SUGAR</option>
+                    <input type="checkbox" option value="y5">OIL</option>
+                    <input type="checkbox" option value="y6">SPIECES</option>
+                    <input type="checkbox" option value="y7">OTHER</option>
+                </select>
+                <br><br>
+                                              
+                <br><br>
+                <input type="file" name="series"><br><br>
+                <label>Age<input type="number"></label><br><br>
+               <center><input type="submit" name="submit" value="SUBMIT"></center> 
+               <button>SEND</button>
+            </form>
+    </fieldset>
+    
+</body>
+</html>
