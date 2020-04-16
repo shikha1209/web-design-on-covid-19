@@ -6,106 +6,108 @@
     <title>VENDOR</title>
     <style>
         *{
-margin: 0;
-padding: 0;
-font-family: Century Gothic;
-}
-
-body{
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1.jpg");
-height:100vh;
-background-size: cover;
-background-position: center;
-}
-ul{
-float: right;
-list-style-type: none;
-margin-top: 25px;
-}
-ul li{
-display: inline-block;
-}
-ul li a{
-text-decoration: none;
-padding: 5px 20px;
-border: 1px solid transparent;
-transition: 0.6s ease;
-}
-ul li a:hover{
-background-color: #0000ff;
-color: #fff;
-}
-ul li.active a{
-background-color: #0000ff;
-color: #fff;
-}
-.logo img{
-float: left;
-width: 90px;
-height:100px;
-}
-
-.main{
-max-width: 1200px;
-margin: auto;
-}
-
-form{
-margin-top: 50px;
-margin-left: 50px;
-margin-right: 50px;
-margin-bottom: 50px;
-}
-
-.form-control{
-width: 600px;
-background: transparent;
-border: none;
-outline: none;
-border-bottom: 1px solid gray;
-color: #ffffff;
-font-size: 18px;
-margin-bottom: 16px;
-}
-
-h2{
-margin: 0;
-padding: 0 0 20px;
-text-align: center;
-font-size: 22px;
-}
-
-
-.form-contrl{
-width: 400px;
-background: transparent;
-border: none;
-outline: none;
-border-bottom: 1px blue;
-color: #ffffff;
-font-size: 18px;
-margin-bottom: 16px;
-}
-input{
-height: 45px;
-}
-
-form .submit{
-background-color: #ff5722;
-border-color: transparent;
-color: #fff;
-font-size: 20px;
-letter-spacing: 2px;
-height:50px;
-margin-top: 20px;
-transition: 0.4s ease;
-}
-
-form .submit:hover{
-background-color: #f44336;
-cursor: pointer;
-}
-
+    margin: 2px;
+    padding: 2px;
+    font-family: Century Gothic;
+    text-align: center;
+    }
+    
+    body{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    }
+    
+    ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 15px;
+    }
+    ul li{
+    display: inline-block;
+    }
+    
+    ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    }
+    ul li a:hover{
+    background-color: #0000ff;
+    color: #fff;
+    }
+    
+    ul li.active a{
+    background-color: #0000ff;
+    color: #fff;
+    }
+    
+    .logo img{
+    float: left;
+    width: 90px;
+    height:100px;
+    }
+    
+    .main{
+    max-width: 1200px;
+    margin: auto;
+    }
+    
+    .title{
+    margin-top: 100px;
+    color: #fff;
+    }
+    
+    .title h1{
+    font-size: 32px;
+    line-height: 10px;
+    }
+    
+    .title h2{
+    font-size: 16px;
+    }
+    
+    form{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    }
+    
+    .form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+    }
+    
+    input{
+    height: 45px;
+    }
+    
+    form .submit{
+    background-color: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height:50px;
+    margin-top: 20px;
+    transition: 0.4s ease;
+    }
+    
+    form .submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+    }
+    
     </style>
 </head>
 
@@ -117,8 +119,8 @@ cursor: pointer;
           </div>
             <ul>
                <li class="active"><a href="main.html">HOME</a></li>
-               <li><a href="#">GALLERY</a></li>
-               <li><a href="#">ABOUT</a></li>
+               <li><a href="gallery.html">GALLERY</a></li>
+               <li><a href="about.html">ABOUT</a></li>
                <li><a href="contact.html">CONTACT US</a></li>
            </ul>
        </div>
@@ -130,7 +132,7 @@ cursor: pointer;
 <legend align="center"> FORM </legend>
 <input type="text" name="username" class="form-control" placeholder="Enter Your Name" required><br><br>
 <input type="text" name="add" class="form-control" placeholder="Enter Your Address" required><br><br>
-<input type="number" name="phone" class="form-control" placeholder="Enter Your Phone no" required><br><br>
+<input type="tel" name="phone" class="form-control" placeholder="Enter Your Phone no" maxlength="10" required><br><br>
 <input type="email" name="email" class="form-control" placeholder="Enter Your Mail" required><br><br>
 DOB: <input type="date" name="date" class="form-control"  required><br><br>
                Gender: <input type="radio" name="gender" >Male
